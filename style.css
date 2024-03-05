@@ -1,0 +1,119 @@
+:root {
+  --base-Chinese-font: "Source Han Serif SC", "Source Han Serif TC";
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-background);
+  /* TODO change */
+  font-family: var(--base-Chinese-font) sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+}
+a:hover {
+}
+a:visited {
+}
+
+#cv {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+
+  font-weight: normal;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: bold;
+  margin-top: 0.7em;
+  margin-bottom: 0.7em;
+
+  break-before: auto;
+  break-after: auto;
+}
+
+@media print {
+  * {
+    float: none !important;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  h3 {
+    font-size: 14px;
+  }
+
+  h4 {
+    font-size: 12px;
+  }
+}
+
+/* Style */
+
+.info {
+  display: grid;
+  grid-template-areas:
+    "picture name"
+    "picture base-info"
+    "picture contact-links";
+}
+
+.picture {
+  grid-area: picture;
+}
+
+.name {
+  text-align: center;
+  grid-area: name;
+}
+
+.base-info {
+  grid-area: base-info;
+}
+
+.contact-links {
+  grid-area: contact-links;
+}
+
+.base-info,
+.contact-links {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+}
+
+.base-info > li,
+.contact-links > li {
+  width: 50%;
+  display: flex;
+}
