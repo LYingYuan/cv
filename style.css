@@ -10,6 +10,7 @@ html {
 *::before,
 *::after {
   box-sizing: inherit;
+  margin: 0;
 }
 
 body {
@@ -83,18 +84,20 @@ h5 {
 .info {
   display: grid;
   grid-template-areas:
-    "picture name"
-    "picture base-info"
-    "picture contact-links";
+    "picture name          name"
+    "picture base-info     base-info"
+    "picture contact-links contact-links";
 }
 
 .picture {
   grid-area: picture;
+  margin: 0 auto;
 }
 
 .name {
   text-align: center;
   grid-area: name;
+  font-size: xx-large;
 }
 
 .base-info {
@@ -110,10 +113,13 @@ h5 {
   display: flex;
   flex-flow: row wrap;
   justify-content: start;
+  margin: 0;
 }
 
 .base-info > li,
 .contact-links > li {
   width: 50%;
   display: flex;
+  align-content: center;
+  gap: 5px;
 }

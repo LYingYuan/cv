@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elowen's CV</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./static/Elowen-logos_transparent.png" type="image/x-icon" />
     <script src="https://kit.fontawesome.com/9027b11ab8.js" crossorigin="anonymous"></script>
   </head>
   <body id="cv">
     <main>
       <section class="info">
-        <img class="picture" src="./static/Elowen.png" alt="罗迎元的照片" />
+        <div class="picture"><img src="./static/Elowen.png" alt="罗迎元的照片" /></div>
+
         <h1 class="name">罗迎元</h1>
         <ul class="base-info">
           <li>
             <div class="icon">🏠</div>
-            <div class="text">重庆市渝北区</div>
+            <div class="text"><address>中国重庆市</address></div>
           </li>
           <li>
             <div class="icon">📱</div>
@@ -23,7 +25,7 @@
           </li>
           <li>
             <div class="icon">🎂</div>
-            <div class="text">2001 年 4 月 28 日</div>
+            <div class="text"><time datetime="2021-04-28">2001 年 4 月 28 日</time></div>
           </li>
           <li>
             <div class="icon">🇨🇳</div>
@@ -51,25 +53,153 @@
       </section>
       <section class="introduction">
         <h2>简介</h2>
-        <p>一名前端开发程序员</p>
+        <p>一名前端开发人员，致力于写出对用户友好、语义化、美观的页面。喜欢抽象问题再解决问题。贯彻执行终生学习，坚信在这过程中既可以提高工作效率也可以充实自身。</p>
       </section>
       <section class="experiences">
         <h2>工作经历</h2>
         <ol>
-          <li></li>
+          <li>
+            <section class="company-info">
+              <h3>重庆鼎汇信息技术有限公司（赛迪信息）</h3>
+              <address>中国重庆市</address>
+              <a href="https://www.cisdiinfo.com.cn/" target="_blank" rel="noopener noreferrer">https://www.cisdiinfo.com.cn/</a>
+            </section>
+            <section class="career-path">
+              <p class="role">前端开发工程师</p>
+              <div class="tenure">
+                <time class="from" datetime="2023-07">2023 年 7 月</time>
+                -
+                <time class="to">至今</time>
+              </div>
+              <div class="work-content">
+                <p>负责有色金属工厂数据可视化项目，涵盖 Web 端和移动端开发。采用图表、表格等多种形式呈现数据，设计直观美观且极佳的用户体验。通过优化可视化方案，有效提升决策效率和便捷性。</p>
+              </div>
+              <section class="tech-stack">
+                <h4>技术栈</h4>
+                <ul>
+                  <li>Vue</li>
+                  <li>JavaScript</li>
+                  <li>Echarts</li>
+                  <li>TypeScript</li>
+                  <li>Element UI</li>
+                  <li>Docker</li>
+                  <li>Less</li>
+                </ul>
+              </section>
+            </section>
+          </li>
+          <li>
+            <section class="company-info">
+              <h3>重庆乐骋科技有限公司</h3>
+              <address>中国重庆市</address>
+              <a href="https://www.beianx.cn/company/390336387637317" target="_blank" rel="noopener noreferrer">https://www.beianx.cn/company/390336387637317</a>
+            </section>
+            <section class="career-path">
+              <p class="role">产品经理</p>
+              <div class="tenure">
+                <time class="from" datetime="2021-09">2021 年 9 月</time>
+                -
+                <time class="to" datetime="2021-12">2021 年 12 月</time>
+              </div>
+              <div class="work-content">
+                <p>负责消防系统移动端产品原型设计，并输出交互原型图。作为学生小组组长，负责协调组内分工，安排组员工作任务，并组织团队活动。</p>
+              </div>
+              <section class="tech-stack">
+                <h4>技术栈</h4>
+                <ul>
+                  <li>Axure</li>
+                </ul>
+              </section>
+            </section>
+          </li>
         </ol>
-      </section>
-      <section class="education">
-        <h2>教育经历</h2>
-        <ol></ol>
       </section>
       <section class="lauguange">
         <h2>语言能力</h2>
-        <ol></ol>
+        <ol>
+          <li>🇨🇳中文 母语</li>
+          <li>🇬🇧英语 CET-4</li>
+        </ol>
       </section>
       <section class="projects">
-        <h2>开源项目</h2>
+        <h2>个人项目</h2>
         <ol></ol>
+      </section>
+      <section class="education">
+        <h2>教育经历</h2>
+        <ol>
+          <li>
+            <section class="shool-info">
+              <h3>重庆大学国家卓越工程师学院</h3>
+              <address>中国重庆市</address>
+              <div class="duration">
+                <time class="from" datetime="2022-09">2022 年 9 月</time>
+                -
+                <time class="to" datetime="2023-05">2023 年 5 月</time>
+              </div>
+              <p class="gpa">GPA:3.9/4.0</p>
+            </section>
+            <section class="academic-details">
+              <p>智能汽车软件</p>
+              <section class="major-courses">
+                <h4>主修课程：</h4>
+                <ul>
+                  <li>车载软件开发基础</li>
+                  <li>智能网联汽车系统</li>
+                  <li>车联网系统与应用</li>
+                  <li>智能驾驶算法基础</li>
+                  <li>智能网联汽车软件工程</li>
+                </ul>
+              </section>
+              <section class="honors">
+                <h4>荣誉：</h4>
+                <ul>
+                  <li>三等新生奖学金</li>
+                  <li>三等毕业学业奖学金</li>
+                </ul>
+              </section>
+            </section>
+          </li>
+          <li>
+            <section class="shool-info">
+              <h3>重庆邮电大学</h3>
+              <address>中国重庆市</address>
+              <div class="duration">
+                <time class="from" datetime="2019-09">2019 年 9 月</time>
+                -
+                <time class="to" datetime="2023-06">2023 年 6 月</time>
+              </div>
+              <p class="gpa">GPA: 3.1/4.0</p>
+            </section>
+            <section class="academic-details">
+              <p>数据科学与大数据技术</p>
+              <section class="major-courses">
+                <h4>主修课程：</h4>
+                <ul>
+                  <li>计算机组织与结构</li>
+                  <li>计算机网络</li>
+                  <li>算法分析与设计 C</li>
+                  <li>操作系统</li>
+                  <li>数字与逻辑电路设计</li>
+                  <li>数据库原理</li>
+                  <li>机器学习基础</li>
+                  <li>云计算与大数据基础</li>
+                  <li>大数据系统开发</li>
+                </ul>
+              </section>
+
+              <section class="honors">
+                <h4>荣誉：</h4>
+                <ul>
+                  <li>校级优秀共青团员</li>
+                  <li>校级优秀学生干部</li>
+                  <li>校级优秀学生会干部</li>
+                  <li>校级青年志愿者先进个人</li>
+                </ul>
+              </section>
+            </section>
+          </li>
+        </ol>
       </section>
     </main>
   </body>
