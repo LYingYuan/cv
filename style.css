@@ -1,5 +1,8 @@
 :root {
-  --base-Chinese-font: "Source Han Serif SC", "Source Han Serif TC";
+  --base-Chinese-font: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  --color-dark: #333;
+  --color-gray: gray;
 }
 
 html {
@@ -11,6 +14,7 @@ html {
 *::after {
   box-sizing: inherit;
   margin: 0;
+  font-style: normal;
 }
 
 body {
@@ -18,7 +22,7 @@ body {
   color: var(--color-text);
   background: var(--color-background);
   /* TODO change */
-  font-family: var(--base-Chinese-font) sans-serif;
+  font-family: var(--base-Chinese-font);
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -53,30 +57,8 @@ h5 {
   break-after: auto;
 }
 
-@media print {
-  * {
-    float: none !important;
-  }
-
-  body {
-    font-size: 12px;
-  }
-
-  h1 {
-    font-size: 18px;
-  }
-
-  h2 {
-    font-size: 16px;
-  }
-
-  h3 {
-    font-size: 14px;
-  }
-
-  h4 {
-    font-size: 12px;
-  }
+h5 {
+  font-size: 14px;
 }
 
 /* Style */
@@ -91,7 +73,8 @@ h5 {
 
 .picture {
   grid-area: picture;
-  margin: 0 auto;
+  display: flex;
+  align-items: end;
 }
 
 .name {
@@ -110,16 +93,108 @@ h5 {
 
 .base-info,
 .contact-links {
+  padding: 0;
+  padding-top: 10px;
+  margin-left: 80px;
   display: flex;
   flex-flow: row wrap;
   justify-content: start;
-  margin: 0;
 }
 
 .base-info > li,
 .contact-links > li {
   width: 50%;
+  height: 30px;
   display: flex;
-  align-content: center;
-  gap: 5px;
+  align-items: center;
+  gap: 8px;
+}
+
+.icon {
+  width: 30px;
+  text-align: center;
+}
+
+.introduction,
+.experiences,
+.language,
+.projects,
+.education,
+.language {
+  margin-top: 35px;
+}
+
+.logo img {
+  max-height: 64px;
+  max-width: 64px;
+}
+
+.company-name,
+.school-name {
+  margin-bottom: 0;
+}
+
+.company-website {
+  font-size: small;
+}
+
+.company-address,
+.school-address {
+  font-size: small;
+  color: var(--color-gray);
+}
+
+.role {
+  margin-bottom: 0;
+}
+
+.tenure {
+  font-size: small;
+  color: var(--color-gray);
+  margin-bottom: 10px;
+}
+
+/* icon */
+.icon-small {
+  font-size: 24px;
+}
+
+.icon-medium {
+  font-size: 48px;
+}
+
+.icon-large {
+  font-size: 64px;
+}
+
+/* timeline */
+.timeline {
+  list-style-type: none;
+}
+
+.timeline > li {
+  position: relative;
+}
+
+.timeline > li > section .logo {
+  position: absolute;
+  left: -40px;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-detail {
+  border-left: 1px solid #333;
+  padding: 20px 0 30px 70px;
+}
+
+.timeline > li:last-child > .timeline-detail {
+  padding-bottom: 0;
+}
+
+.timeline-info {
+  padding-left: 70px;
 }
