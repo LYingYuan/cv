@@ -57,6 +57,10 @@ h5 {
   break-after: auto;
 }
 
+h2 {
+  position: relative;
+}
+
 h5 {
   font-size: 14px;
 }
@@ -110,7 +114,6 @@ h5 {
   height: 30px;
   display: flex;
   align-items: center;
-  gap: 8px;
 }
 
 .icon {
@@ -148,7 +151,7 @@ h5 {
 }
 
 .role {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .tenure,
@@ -189,7 +192,7 @@ h5 {
 
 .language-list {
   list-style-type: none;
-  margin-left: 70px;
+  padding-left: 0;
 }
 
 .language-flag {
@@ -197,7 +200,7 @@ h5 {
 }
 
 .language-skill {
-  padding-left: 10px;
+  padding-left: 80px;
 }
 
 .start-line {
@@ -206,6 +209,27 @@ h5 {
   height: 3px;
   background-color: black;
   border: none;
+}
+
+.projects-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.projects-list > li > div {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+
+.projects .tech-logos {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: end;
+}
+
+.project-website {
+  font-size: small;
+  text-align: end;
 }
 
 /* icon */
@@ -259,7 +283,7 @@ h5 {
 }
 
 .timeline > li:last-child > .timeline-detail {
-  padding-bottom: 0;
+  padding-bottom: 5px;
 }
 
 .timeline-info {
