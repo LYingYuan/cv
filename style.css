@@ -66,15 +66,18 @@ h5 {
 .info {
   display: grid;
   grid-template-areas:
-    "picture name          name"
-    "picture base-info     base-info"
-    "picture contact-links contact-links";
+    "picture picture name          name          name"
+    "picture picture base-info     base-info     base-info"
+    "picture picture contact-links contact-links contact-links";
 }
 
 .picture {
   grid-area: picture;
   display: flex;
   align-items: end;
+}
+.picture > img {
+  width: 100%;
 }
 
 .name {
@@ -167,6 +170,11 @@ h5 {
 }
 
 .tech-logo {
+  display: flex;
+  align-items: center;
+}
+
+.tech-logo > img {
   padding: 8px;
 }
 
@@ -176,7 +184,7 @@ h5 {
 
 .two-column-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 2fr 1fr;
 }
 
 .language-list {
