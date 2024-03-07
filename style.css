@@ -148,10 +148,56 @@ h5 {
   margin-bottom: 0;
 }
 
-.tenure {
+.tenure,
+.duration {
   font-size: small;
   color: var(--color-gray);
   margin-bottom: 10px;
+}
+
+.tech-logos {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: repeat(5, 64px);
+  width: 332px;
+  column-gap: 8px;
+  row-gap: 8px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.tech-logo {
+  padding: 8px;
+}
+
+.gpa {
+  margin-left: 10px;
+}
+
+.two-column-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.language-list {
+  list-style-type: none;
+  margin-left: 70px;
+}
+
+.language-flag {
+  padding-right: 10px;
+}
+
+.language-skill {
+  padding-left: 10px;
+}
+
+.start-line {
+  width: 80px;
+  position: relative;
+  height: 3px;
+  background-color: black;
+  border: none;
 }
 
 /* icon */
@@ -167,6 +213,18 @@ h5 {
   font-size: 64px;
 }
 
+/* logo */
+.logo-small {
+  width: 24px;
+}
+
+.logo-medium {
+  width: 48px;
+}
+
+.logo-large {
+  width: 64px;
+}
 /* timeline */
 .timeline {
   list-style-type: none;
@@ -188,7 +246,8 @@ h5 {
 
 .timeline-detail {
   border-left: 1px solid #333;
-  padding: 20px 0 30px 70px;
+  padding: 5px 0 30px 70px;
+  margin-top: 20px;
 }
 
 .timeline > li:last-child > .timeline-detail {
